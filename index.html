@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Munene Morris">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Post Pulse</h1>
+    </header>
+    <section id="mainSection">
+        <div id="post-detail">
+            <div id="blogAuthor"></div>
+            <div id="blog-img"></div>
+            <div id="blog-title">hello</div>
+            <div id="blog-contents">hello</div>
+        </div>
+        <div id="post-list">
+            <div class="list-wrapper" id="list-wrapper">
+            </div>
+            <div id="add-blog">
+                <button id="add-button">New blog</button>
+            </div>
+        </div>
+    </section>
+    <div id="modal">
+            <div id="close">x</div>
+            <form name="newBlog" id="newBlog">
+                <fieldset>
+                <legend>Blog Title*</legend>
+                <input type="text" class="textplaces" name="blogTitle" placeholder="Blog Title">
+                </fieldset>
+                <fieldset>
+                <legend>Author*</legend>
+                <input type="text" class="textplaces" name="author" placeholder="Blog Author">
+                </fieldset>
+                <fieldset>
+                <legend>Blog Image*</legend>
+                <input type="text" class="textplaces" name="blogImage" placeholder="In url">
+                </fieldset>
+                <fieldset>
+                <legend>Blog Contents*</legend>
+                <textarea name="blogContents" class="textplaces" rows="10" cols="50" placeholder="Write your blog contents here"></textarea>
+                </fieldset>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </div>
+    <script src="/src/index.js"></script>
+</body>
+</html>

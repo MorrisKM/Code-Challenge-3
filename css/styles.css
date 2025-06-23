@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    background-size: cover;
+}
+body{
+    background-color: black;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+section{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    max-width: 1400px;
+    justify-content: center;
+    background-color: rgba(23, 23, 23, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 1%;    
+    border-radius: 20px;
+}
+#post-list, #post-detail{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#post-list{
+    width: 45%;
+}
+#post-detail{
+    overflow-y: auto;
+    width: 55%;
+    gap: 1%;
+}
+.list-wrapper{
+    height: 93%;
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 2%;
+}
+.blog-pre{
+    display: flex;
+    height: 130px;
+    width: 98%;
+    gap: 2%;
+    border-radius: 10px;
+}
+.blog-pre:hover{
+    background-color: rgba(31, 29, 29, 0.5);
+}
+.img-pre{
+    height: 130px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+.blog-pre-c{
+    height: 130px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    overflow: hidden;
+}
+.blogPreHeading{
+    font-size: medium;
+    height: 50px;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+p{
+    margin: 0;
+    font-size: small;
+    overflow: hidden;
+}
+#add-blog{
+    display: flex;
+    height: 7%;
+    width: 98%;
+}
+#add-button{
+    height: 80%;
+    justify-self: flex-start;
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    align-self: center;
+}
+#blog-title{
+    width: 95%;
+    height: 5%;
+}
+#blog-img{
+    width: 95%;
+    height: 75%;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+#blog-contents{
+    width: 95%;
+}
+#modal{
+    position: absolute;
+    height: 450px;
+    width: 50%;
+    background-color: rgba(23, 23, 23, 0.6);
+    visibility: hidden;
+    transform: translate(0%, 50%);
+}
+#newBlog{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+fieldset{
+    width: 95%;
+    justify-self: center;
+}
+input, textarea{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    color: white;
+}
+.textplaces:focus{
+    outline: none;
+}
+#close{
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+    background-color: red;
+    width: 5%;
+    cursor: pointer;
+}
+.edits{
+    width: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    visibility: hidden;
+}
+.editor, .deleter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    border-radius: 5px;
+}
+.editor{
+    background-color: gray;
+}
+.deleter{
+    background-color: red;
+}
+.active{
+    visibility: visible;
+}
+@media (max-width: 900px){
+    body{
+        overflow-y: auto;
+    }
+    section{
+        flex-direction: column;
+        height: 1000px;
+        gap: 4rem;
+    }
+    #post-detail{
+        width: 100%;
+    }
+    #post-list{
+        width: 100%;
+    }
+    #blog-img{
+        height: 450px;
+    }
+    .blog-pre, .img-pre, .blog-pre-c{
+        height: 100px;
+    }
+    .blogPreHeading{
+        height: 12px;
+    }
+    .blog-pre{
+        margin: 0;
+        padding: 0;
+    }
+    p{
+        margin: 0;
+    }
+}
