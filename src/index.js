@@ -14,8 +14,9 @@ let editBlogId = null;
 
 //loading data from db.js
 window.addEventListener('DOMContentLoaded', async ()=> {
-    let db = await fetch('http://localhost:3000/blogs');
-    let data = await db.json();
+    let db = await fetch('https://morriskm.github.io/Code-Challenge-3/db.json'); //reads from github pages
+    let blog = await db.json();
+    let data = blog.blogs;
     let activeBlogPre = null;
 
     blogAuthor.textContent = `Written By: ${data[0].author}, published on: ${data[0].blogTime}`
