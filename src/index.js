@@ -85,7 +85,7 @@ window.addEventListener('DOMContentLoaded', async ()=> {
         deleter.addEventListener('click', async () => {
             let confirmation = confirm('Are You sure you want to delete the blog?')
             if (confirmation) {
-                await fetch(`http://localhost:3000/blogs/${x.id}`, {
+                await fetch(`./db.json/blogs/${x.id}`, {
                     method: 'DELETE',
                 })
                 alert('blog deleted')
@@ -122,12 +122,12 @@ form.addEventListener('submit', async (e) => {
         try{
             let response;
             if(editBlogId && editMode){
-                response = await fetch(`http://localhost:3000/blogs/${editBlogId}`, {
+                response = await fetch(`./db.json/blogs/${editBlogId}`, {
                     method: 'PUT',
                     body: JSON.stringify(obj)
                 });
             }else{
-                response = await fetch('http://localhost:3000/blogs', {
+                response = await fetch('./db.json/blogs', {
                     method: 'POST',
                     body: JSON.stringify(obj)
                 });
