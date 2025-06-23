@@ -3,14 +3,14 @@
     {
       "blogTitle": "Hello this is a new blog",
       "author": "Morris",
-      "blogImage": "/images/leclerc.jpeg",
+      "blogImage": "images/leclerc.jpeg",
       "blogContents": "this is it",
       "blogTime": "23/5/2025",
       "id": "cb83"
     },
     {
       "blogTitle": "MusicS",
-      "blogImage": "/images/music.jpeg",
+      "blogImage": "images/music.jpeg",
       "author": "Morris",
       "blogContents": "Music relaxes your mind",
       "blogTime": "23/5/2025",
@@ -19,7 +19,7 @@
     {
       "id": "fd35",
       "blogTitle": "Chess",
-      "blogImage": "/images/knight-transformed.png",
+      "blogImage": "images/knight-transformed.png",
       "author": "Morris",
       "blogContents": "This is the knight chess piece",
       "blogTime": "23/5/2025"
